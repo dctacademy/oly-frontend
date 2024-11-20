@@ -28,8 +28,8 @@ function App(props) {
         ) : (
           <>
           <li><Link to="/dashboard">Dashboard</Link></li>
-          { userState?.user?.role == 'admin' && <li><Link to="/manage-users">Manage Users</Link></li>}
-          { userState?.user?.role == 'seller' && <li><Link to="/add-product">Add Product</Link></li> }
+          { userState.user?.role == 'admin' && <li><Link to="/manage-users">Manage Users</Link></li>}
+          { userState.user?.role == 'seller' && <li><Link to="/add-product">Add Product</Link></li> }
           <li><Link to="/account">Account</Link></li>
           <li><button onClick={() => {
             handleLogout();
